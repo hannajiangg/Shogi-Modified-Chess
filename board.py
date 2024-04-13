@@ -601,6 +601,7 @@ class Board:
     def illegal(self):
         if self.illegal_tuple[0]:
             print(self.illegal_tuple[1], 'player wins.  Illegal move.')
+            sys.exit()
     # END: Too many moves
     def tie_game(self):
         if self.turn == 400:
