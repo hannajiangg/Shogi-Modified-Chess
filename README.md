@@ -1,16 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/1tcNIOGv)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14480903&assignment_repo_type=AssignmentRepo)
 # BoxShogi Specification
 
-We're excited for you to get started on this take home assignment! Below you will find all the information needed to get set up and start coding away! Throughout the two weeks we will invite you to office hours. These are a great way for you to learn more about the assignment as well as Box, and get your questions answered directly from our engineers. You will be invited to four virtual office hours (look out for Google Calendar invites and a Zoom link!) More details can be found [here](https://cloud.box.com/s/pr7hnx4fwpca1r8ai203bratwo83egev). 
-
-Please feel free to reach out anytime to our team at internship-take-home@box.com, whether you have questions/concerns about the assignment or just want to learn more about Box.
-
-Listed below is how to setup your coding environment and begin coding under [Getting Started](#getting-started), the game specification under [Game Rules](#game-rules) and finally the expected game interface under [Game Interface](#game-interface). We recommend reading the games rules and understanding the game interface before you begin coding.
-
 - [Getting Started](#getting-started)
-  - [Working on your Desktop](#working-on-your-desktop)
-  - [Working Online with VSCode in GitHub](#working-on-github-vscode)
 - [Game Rules](#game-rules)
     - [Overview](#overview)
     - [Objective](#objective)
@@ -27,33 +17,9 @@ Listed below is how to setup your coding environment and begin coding under [Get
 
 ## Getting Started
 
-When you accepted the assignment, this Github repo was created. This is where your assignment code will reside. This is what will be viewed and graded by us. Anytime code is pushed to this repo our autograder is run. **You will be graded on passing the tests run by the autograder.** You can view the autograder results by clicking on the <img src="./media/autograder_check.png" width="25" height="25" />, <img src="./media/autograder_x.png" width="25" height="25" /> or <img src="./media/autograder_dot.png" width="25" height="25" /> next to the most recent commit hash. This is shown below.
-
-![](media/autograder.gif)
-
-Some starter code is provided and a utility function. **You must use the starter code provided! Please keep the directory structure for the starter code so our autograder can find the main method to run.** You can also use the utility function provided to handle some of the tedious input and output so that you don't need to implement it yourself. The utility function can be modified to suit your needs. It is also optional; not required to be used.
-
-You can work on this project locally on your desktop or online on GitHub's in-browser VSCode. **No matter what option you choose, please ensure you are using Python `3.8.2` when developing your code**
-
-### Working on your Desktop
-
-To begin the assignment, you need to first clone your repo to your desktop by running the command below in your terminal after replacing `<your-github-username>`  with your Github username. 
-
-```
-$ git clone https://github.com/Box-Internship-Assignment/box-take-home-python-<your-github-username>.git
-```
-
-Once you have the code locally, you can edit your code using your favorite code editor. Once you have edited the code, to push the changes to Github, you should run the commands below. 
-
-```
-$ git add .
-$ git commit -m 'message describing the changes'
-$ git push
-```
+Download the repository on your local machine.
 
 #### Testing your program
-
-We have created a collection of test cases along with a test runner that you can use to determine the correctness of your solution. We use this test runner in our autograder, but you can also run it locally.
 
 The test runner is provided as a binary, and supports macOS, Windows 10, and Ubuntu Linux. Other flavors of these operating systems may work, but are not tested.
 
@@ -64,22 +30,6 @@ The test runner and test cases can be found in the `test_runners` and `test_case
 - **Notes**
   - On windows, pass the `/K` option to keep the runner open after execution
   - Make sure the runner is executable via the terminal by running `chmod a+x ./test_runners/test-runner-mac` or `chmod a+x ./test_runners/test-runner-linux`. On Windows, right click the file and navigate the `properties` menu
-
-##### Supported flags
-`-r` reset: this resets the `.command` file in case the path/way you run your program in file mode changes.
-
-`-v` verbose: this will print out the difference in the expected output and actual output of failed tests, along with an explanation of the differences/errors.
-
-`-f` filter: filters test cases based on a string. e.g. `./test_runners/test-runner-mac -f "governance"` will run tests that have governance in their name.  
-    **Note:** If using windows, make sure to use double quotes "" or no quotes. Single quotes will not work.  
-    
-`-b` break: stops execution of tests after the first encountered failure
-
-**Note:** You can combine flags, although if you're using the filter flag, the filter string must be right after. For example, both of these would work equivalently:
-- `./test_runners/test-runner-mac -b -f 'governance'`
-- `./test_runners/test-runner-mac -f 'governance' -b`
-
-Note: the test cases aren't completely exhaustive — there are too many variations of illegal moves for creating a totally exhaustive set to be feasible — but for the purposes of evaluating your solution, you don't need to consider anything not covered by the provided test cases.
 
 ### Working on GitHub VSCode
 
